@@ -19,6 +19,15 @@ console.log ("Чистий прибуток:",(sumPrice/2 - sumPrice*discount))
 
 //Advanced
 
-alert(`Максимальне значення:${Math.max(potatoPrice, onionPrice, carrotPrice)}<br/>bla`)
+alert(`Максимальне значення:${Math.max(potatoPrice, onionPrice, carrotPrice)} /n
+Мінімальне значення:${Math.min(potatoPrice, onionPrice, carrotPrice)} /n
+Сумма:${sumPrice} /n
+Сумма округлена до сотень:${sumPriceFloorRound} /n
+Перевірка сумми на парність (парне-true, непарне-false):${evenOrOdd} /n
+Решта з 500:${500 - sumPrice} /n
+Середнє значення округлене до другого знаку після коми:${Math.round(100*(sumPrice/3))/100} /n
+Сумма з випадковою знижкою:${Math.round(100*(sumPrice*(1-discount))/100} /n
+Чистий прибуток:${sumPrice/2 - sumPrice*discount}                       
+`)
           
              
