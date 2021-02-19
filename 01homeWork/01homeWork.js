@@ -19,6 +19,6 @@ console.log ("Чистий прибуток:",(sumPrice/2 - sumPrice*discount))
 
 //Advanced
 
-document.writeln(`Максимальне значення:${Math.max(potatoPrice, onionPrice, carrotPrice)}<br/>bla`)
+alert(`Максимальне значення:${Math.max(potatoPrice, onionPrice, carrotPrice)}<br/>bla`)
           
              
