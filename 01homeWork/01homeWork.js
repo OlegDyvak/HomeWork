@@ -14,7 +14,7 @@ console.log("Перевірка сумми на парність (парне-tru
 console.log("Решта з 500:", (500 - sumPrice))
 console.log("Середнє значення округлене до другого знаку після коми:", (Math.round(100*(sumPrice/3))/100))
 let discount = Math.random()
-console.log ("Сумма з випадковою знижкою:",(Math.round(100*(sumPrice*(1-discount))/100))
+console.log ("Сумма з випадковою знижкою:",(Math.round(100*(sumPrice*(1-discount))/100)))
 console.log ("Чистий прибуток:",(sumPrice/2 - sumPrice*discount))
 
 //Advanced
@@ -26,7 +26,7 @@ alert(`Максимальне значення:${Math.max(potatoPrice, onionPric
 Перевірка сумми на парність (парне-true, непарне-false):${evenOrOdd} /n
 Решта з 500:${500 - sumPrice} /n
 Середнє значення округлене до другого знаку після коми:${Math.round(100*(sumPrice/3))/100} /n
-Сумма з випадковою знижкою:${Math.round(100*(sumPrice*(1-discount))/100} /n
+Сумма з випадковою знижкою:${Math.round(100*(sumPrice*(1-discount))/100)} /n
 Чистий прибуток:${sumPrice/2 - sumPrice*discount}                       
 `)
           
