@@ -11,11 +11,12 @@ console.log("Сумма округлена до сотень:",sumPriceFloorRoun
 let evenOrOdd = false
 if (sumPriceFloor % 2 == 0) evenOrOdd = true
 console.log("Перевірка сумми на парність (парне-true, непарне-false):",evenOrOdd)
-console.log("Решта з 500:", (500 - sumPrice))
+const bill = 500
+console.log("Решта з ",bill,":", (bill - sumPrice))
 console.log("Середнє значення округлене до другого знаку після коми:", (Math.round(100*(sumPrice/3))/100))
 let discount = Math.random()
 console.log("Сумма з випадковою знижкою:",(Math.round(100*(sumPrice*(1-discount))/100)))
-console.log("Чистий прибуток:",(sumPrice/2 - sumPrice*discount))
+console.log("Чистий прибуток:",(sumPrice/2 - sumPrice*discount).toFixed(2))
 
 //Advanced
 
@@ -24,10 +25,10 @@ document.writeln(`Максимальне значення: ${Math.max(potatoPric
 Сумма: ${sumPrice} \
 Сумма округлена до сотень: ${sumPriceFloorRound} \
 Перевірка сумми на парність (парне-true, непарне-false): ${evenOrOdd} \
-Решта з 500: ${500 - sumPrice} \
+Решта з ${bill}: ${bill - sumPrice} \
 Середнє значення округлене до другого знаку після коми: ${Math.round(100*(sumPrice/3))/100} \
 Сумма з випадковою знижкою: ${Math.round(100*(sumPrice*(1-discount))/100)} \
-Чистий прибуток: ${sumPrice/2 - sumPrice*discount}                       
+Чистий прибуток: ${(sumPrice/2 - sumPrice*discount).toFixed(2)}                       
 `)
           
              
