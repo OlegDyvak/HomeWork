@@ -1,21 +1,21 @@
 const N = + prompt('Введіть перше число (N):')
 const M = + prompt('Введіть друге число (M):')
 switch(true){
-    case (!N || !M){
+    case (!N || !M):{
             alert('Ви ввели НЕ число!')
             break
             }
-    case (!(Number.isInteger(N) || Number.isInteger(M))){
+    case (!(Number.isInteger(N) || Number.isInteger(M))):{
             alert('Ви ввели НЕ ціле число!')
             break
             }
-    case (N>=M){
+    case (N>=M):{
             alert('Перше число повинно бути менше другого!')
             break
             }
-}
 //if (!N || !M) alert('Ви ввели НЕ число!')
 //if (!(Number.isInteger(N) || Number.isInteger(M))) alert('Ви ввели НЕ ціле число!')
+    case (N<M):{
 const isTrue = confirm('Виберіть "Ok" якщо потрібно пропускати парні числа, і "Отмена" якщо ні')
 let sum = 0
 let i = 0
@@ -35,3 +35,6 @@ else {
     }
 }
 alert (`Сумма чисел від ${N} до ${M}: ${sum}`)
+break
+     }
+}
