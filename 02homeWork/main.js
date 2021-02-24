@@ -5,7 +5,7 @@ switch(true){
             alert('Ви ввели НЕ число!')
             break
             }
-    case (!(Number.isInteger(N) || Number.isInteger(M))):{
+    case (!Number.isInteger(N) || !Number.isInteger(M)):{
             alert('Ви ввели НЕ ціле число!')
             break
             }
