@@ -1,6 +1,6 @@
 const N = + prompt('Введіть перше число (N):')
 const M = + prompt('Введіть друге число (M):')
-switch(true)
+switch(true){
     case (!N || !M){
             alert('Ви ввели НЕ число!')
             break
@@ -13,6 +13,7 @@ switch(true)
             alert('Перше число повинно бути менше другого!')
             break
             }
+}
 //if (!N || !M) alert('Ви ввели НЕ число!')
 //if (!(Number.isInteger(N) || Number.isInteger(M))) alert('Ви ввели НЕ ціле число!')
 const isTrue = confirm('Виберіть "Ok" якщо потрібно пропускати парні числа, і "Отмена" якщо ні')
