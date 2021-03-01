@@ -13,8 +13,6 @@ switch(true){
             alert('Перше число повинно бути менше другого!')
             break
             }
-//if (!N || !M) alert('Ви ввели НЕ число!')
-//if (!(Number.isInteger(N) || Number.isInteger(M))) alert('Ви ввели НЕ ціле число!')
     case (N<M):{
 const isTrue = confirm('Виберіть "Ok" якщо потрібно пропускати парні числа, і "Отмена" якщо ні')
 let sum = 0
