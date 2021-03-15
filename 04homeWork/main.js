@@ -31,7 +31,7 @@ const studentsAndMarks = getStudentsAndMarks(students, marks)
 console.log(studentsAndMarks)
 
 
-function getPairsAndRandomMark(pairs) {
+function getPairsAndRandomMark(pairs, themes) {
     const pairsAndRandomMark = []
     function getRandomInt(min, max) {
         min = Math.ceil(min);
@@ -39,9 +39,10 @@ function getPairsAndRandomMark(pairs) {
         return Math.floor(Math.random() * (max - min)) + min;
     }
     for (let i = 0; i < pairs.length; i++) {
-        pairsAndRandomMark[i] = [pairs[i], getRandomInt(1, 6)]
+        let pair = pairsOfStudents[i]
+        pairsAndRandomMark[i] = [pair.join(' і '), themes[i], getRandomInt(1, 6)]
     }
     return pairsAndRandomMark
 }
-const pairsAndRandomMark = getPairsAndRandomMark (pairsOfStudents)
+const pairsAndRandomMark = getPairsAndRandomMark (pairsOfStudents, themes)
 console.log(pairsAndRandomMark)
