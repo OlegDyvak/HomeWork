@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
@@ -35,4 +35,42 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Publication {
+  background-color: slategrey;
+  display: flex;
+  align-content: left;
+  width: 600px;
+  height: auto;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.container {
+  margin: 10px;
+}
+
+.userImg {
+  align-self: left;
+  margin: 10px;
+  margin-right: 5px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+
+.publicationImg {
+  margin-bottom: 10px;
+  width: 480px;
+  height: auto;
+  border-radius: 10px;
+}
+
+button {
+  color: red;
+  background-color: transparent;
+  border: 2px solid red;
+  border-radius: 0.5em;
+  cursor: pointer;
 }
